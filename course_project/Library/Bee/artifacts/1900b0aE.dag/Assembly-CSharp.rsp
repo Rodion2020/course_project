@@ -348,11 +348,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraLook.cs"
+"Assets/Scripts/DamageAffectorParticles.cs"
+"Assets/Scripts/FSM/AttackState.cs"
+"Assets/Scripts/FSM/ChaseState.cs"
 "Assets/Scripts/FSM/EmptyState.cs"
 "Assets/Scripts/FSM/FSM.cs"
 "Assets/Scripts/FSM/FSMStateType.cs"
 "Assets/Scripts/FSM/IFSMState.cs"
+"Assets/Scripts/Health.cs"
+"Assets/Scripts/ObjectPool.cs"
 "Assets/Scripts/PlayerContoller.cs"
+"Assets/Scripts/SpawnTimer.cs"
 -langversion:9.0
 
 /deterministic
