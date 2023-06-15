@@ -359,6 +359,7 @@
 "Assets/Scripts/ObjectPool.cs"
 "Assets/Scripts/PlayerContoller.cs"
 "Assets/Scripts/SpawnTimer.cs"
+"Assets/Scripts/Weapon.cs"
 -langversion:9.0
 
 /deterministic
