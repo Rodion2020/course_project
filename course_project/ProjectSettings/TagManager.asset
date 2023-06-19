@@ -6,6 +6,8 @@ TagManager:
   tags:
   - EnemyPool
   - Enemy
+  - PostProccessing
+  - Sleep
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - PostProccesing
   - 
   - 
   - 
