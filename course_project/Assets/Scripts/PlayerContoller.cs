@@ -8,13 +8,17 @@ public class PlayerContoller : MonoBehaviour
     public float MovementSpeed = 3f;
     public GameObject SleepCanvas = null;
     private Transform SleepArea;
+    private Transform WashArea;
     public string SleepTag = "Sleep";
+    public string WashTag = "Wash";
     public float Distance = 1f;
+    public GameObject helpInfo;
+    public GameObject waterSound;
     private void Awake()
     {
         
         SleepArea = GameObject.FindGameObjectWithTag(SleepTag).transform;
-
+        WashArea = GameObject.FindGameObjectWithTag(WashTag).transform;
     }
 
     //public void Sleep()
@@ -38,6 +42,7 @@ public class PlayerContoller : MonoBehaviour
 
         if (Vector3.Distance(SleepArea.position, transform.position) <= Distance)
         {
+            helpInfo.SetActive(true);
             if (Input.GetKey(KeyCode.E))
             {
                 SleepCanvas.SetActive(true);
@@ -50,6 +55,31 @@ public class PlayerContoller : MonoBehaviour
                 SleepCanvas.SetActive(false);
                 Time.timeScale = 1f;
             }
+        }
+        else if (Vector3.Distance(SleepArea.position, transform.position) > Distance)
+        {
+            helpInfo.SetActive(false);
+        }
+
+        if (Vector3.Distance(WashArea.position, transform.position) <= Distance)
+        {
+            helpInfo.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                waterSound.SetActive(true);
+                
+
+            }
+
+            else if (Input.GetKeyUp(KeyCode.E))
+            {
+                waterSound.SetActive(false);
+                
+            }
+        }
+        else if (Vector3.Distance(WashArea.position, transform.position) > Distance)
+        {
+            helpInfo.SetActive(false);
         }
     }
 }

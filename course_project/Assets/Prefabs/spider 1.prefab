@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6956107037546201092}
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0097, y: 0.2493, z: 0.3292}
+  m_LocalPosition: {x: -0.0097, y: 0.2493, z: 0.3319}
   m_LocalScale: {x: -0.007590478, y: -0.007590478, z: -0.007590478}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -188,7 +188,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7588940324959937188}
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0098, y: 0.2493, z: 0.3292}
+  m_LocalPosition: {x: 0.0098, y: 0.2493, z: 0.3328}
   m_LocalScale: {x: -0.007590478, y: -0.007590478, z: -0.007590478}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,8 +270,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9245283, g: 0.06454251, b: 0.06454251, a: 1}
-  m_Intensity: 0.5
-  m_Range: 0.5
+  m_Intensity: 0.7
+  m_Range: 0.7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -586,6 +586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TagDamage: Player
   DamageAmount: 10
+  ScoreValue: 1
 --- !u!114 &7767651959514238417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,6 +604,19 @@ MonoBehaviour:
       m_Calls: []
   SpawnPoolTag: EnemyPool
   _HealthPoints: 100
+--- !u!114 &8677646071653705549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888199617631715534}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ea8ed547cfb8844ba5d64e3e506c62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScoreValue: 1
 --- !u!195 &9180786763802617132
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -638,7 +652,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnimationAttackParamName: Attack
-  EscapeDistance: 1
+  EscapeDistance: 10
   MaxAttackDistance: 2
   TargetTag: Player
   DelayBetweenAttacks: 2
@@ -654,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483a999ea12e66b43aebecd2a7009615, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MinChaseDistance: 0.5
+  MinChaseDistance: 2
 --- !u!114 &9180786763802617139
 MonoBehaviour:
   m_ObjectHideFlags: 0
